@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="noor.css">
+    <script src="noor.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#home" class="logo"> Coffee<span>Shop</span></a>
+            <ul class="menu-links">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="Menu">Menu</a></li>
+                <li><a href="review">Reviews</a></li>
+                <li><a href="contact">Contact Us</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <section class="section">
+        <div class="content">
+            <h1>Start Your Day With a Fresh Coffee!</h1>
+            <p>BAD DAY? COFFEE. <br>
+               GOOD DAY? COFFEE. <br>
+               LOTS OF WORK TO DO? COFFEE. <br>
+               BAD CREDIT? COFFEE. <br>
+               DRY SKIN? COFFEE. <br>
+               COFFEE? COFFEE. <br><br>
+            </p>
+            <button class="order" onclick="calculateTotal()">Order Now</button> <br> <br>
+            <div id="orderForm" class="hidden">
+                <select id="coffeeSelect">
+                    <option value="">Select Coffee</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Matcha Latte">Matcha Latte</option>
+                    <option value="Cold Brew">Cold Brew</option>
+                    <option value="Chocolate">Chocolate</option>
+                </select>
+                <select id="dessertSelect">
+                    <option value="">Select Dessert</option>
+                    <option value="Muffins">Muffins</option>
+                    <option value="Blue Berry">Blue Berry</option>
+                    <option value="Cheese Cake">Cheese Cake</option>
+                </select>
+            </div>
+            <br><br>
+            Coffee Quantity: <input type="number" id="coffeeQuantity" placeholder="Enter the quantity of coffee">  <br><br>
+            Dessert Quantity: <input type="number" id="dessertQuantity" placeholder="Enter the quantity of dessert"><br><br>
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <p id="totalPrice"></p>
+        </div>
+    </section>
+
+
+    
+<section class="about" id="about"> 
+    <div class="about-content" >
+        <h2 class="heading"> About US </h2>
+        <p> This Coffee special venues have been designed in a way that completely
+            reflects our vision of an amazing setting,
+             of how and in which ambiance refined guests coming from many different backgrounds, 
+             all seeking a unique experience, should enjoy our exquisite coffe and distinguished atmosphere.
+            
+            Our ingredients undergo rigorous research,  where the best elements are sourced,
+             examined and hand-selected to assure premium consistency in quality,
+              taste and texture. All this to guarantee sustainable fineness and advanced delicacy.
+            
+            We thought of this shop as a place where coffe becomes a common language bringing together
+             all the very components that make our Lebanese cuisin internationally acclaimed,
+              unique trips of taste overlooking all what Lebanon has best to offer
+              gathering under one roof surprisingly sophisticated recipes that take our guests on. <br><br>
+              <button class="btn">Read More</button>  </p>
+        
+    </div> </section>
+
+    <section class="menu" id="menu">
+
+        
+        <div class=item>
+            <h1> Our Menu </h1>
+             <hr>
+            <h2 > Coffee</h2>
+          
+    <div>
+        <p class="flavor">-Espresso <span class="price"> 2.00</span></p>
+        <p class="flavor">-Americano <span class="price">2.50</span></p>
+        <p class="flavor">-Matcha Latte <span class="price">3.00</span></p>
+        <p class="flavor">-Cold Brew <span class="price">3.50</span></p>
+        <p class="flavor">-Chocolate <span class="price">4.00</span></p>
+    </div>
+    <h2><br>Desserts<br></h2>
+    <p class="dessert">-Muffins <span class="price">1.00</span></p>
+    <p class="dessert">-Blueberry <span class="price">1.50</span></p>
+    <p class="dessert">-Peach Pie <span class="price">2.00</span></p>
+    <p class="dessert">-Cheesecake <span class="price">2.50</span></p>
+</div>
+    </section>
+
+    
+
+<section class="reviews" id="reviews">
+<h2 class="heading"> <br> Reviews </h2>
+<div class="review-container">
+<div class="review-box">
+    <i class='bx bx-user-circle'></i>
+<h3>Review 1 <br> <br></h3>
+<p>Its very good café, delicious food, good service,
+ gentle staff, good arguilleh, not expensive ... I advise by this café  <br><br>
+<a href="#" class="btn">Read More</a></p>
+</div>
+
+<div class="review-box">
+    <i class='bx bx-user-circle'></i>
+    <h3> Review 2 <br> <br> </h3>
+    <p> After hearing a lot about this coffe shop we decided to give the newly opened  branch a try.
+         The outdoor seating in the middle of the downtown is charming. The presentation of the food is gorgeous,
+         however the taste is average. The grilled chicken tasted very weird.
+          The offered desserts were amazing.<br><br>
+    <a href="#" class="btn">Read More</a></p>
+    </div>
+
+    <div class="review-box">
+        <i class='bx bx-user-circle'></i>
+        <h3>Review 3 <br> <br> </h3>
+        <p>Absolutely delicious desserts ,Cheesecake is very delicious
+             , excellent Service is flawless Dessert is great Ambiance is fantastic,
+             its Recommended to all travellers <br><br>
+        <a href="#" class="btn">Read More</a></p>
+        </div>
+
+        <div class="review-box">
+            <i class='bx bx-user-circle'></i>
+            <h3>Review 4 <br> <br></h3>
+            <p>I have been to many good Lebanese coffe shop but this coffe shop is definitly ahead of any. 
+                The quality of it was excellent. 
+                Fresh fresh fresh amd service is amazingly fast <br><br>
+            <a href="#" class="btn">Read More</a></p>
+            </div>
+</div>
+</section>
+<section class="contact" id="contact"> 
+
+    <h2 class="heading" >  <br><br> Conatct Us</h2>
+    <form action="#">
+        <div class="input-box">
+            :<input type="text" placeholder="Full Name"> 
+          <input type="email" placeholder="Email">
+            <input type="number" placeholder="phone number">
+            <input type="text" placeholder="subject">
+         </div>
+         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+         <input type="submit" value="Send Message" class="btnn">
+    </form>
+</section>
+<footer class="footer">
+    <div class="social" >
+    <a href="#"> <i class='bx bxl-instagram-alt'> </i></a>
+    <a href="#"> <i class='bx bxl-facebook-square'></i></a>
+    <a href="#"> <i class='bx bxl-pinterest'> </i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <ul class="list">
+        <li > <a href="#">FAQ</a></li>
+        <li> <a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#"> Privacy Policy</a></li>
+    </ul>
+    <p class="copyRight"></p>
+    <h2  > &copy;  CoffeeShop | | Done by NourAbouShaheen</h2>
+</footer>
+</body>
+</html>
